@@ -73,6 +73,25 @@
         .btn-submit { width: 100%; padding: 18px; background: #2c3e50; color: #fff; border: none; border-radius: 5px; font-size: 1.2rem; font-weight: 700; cursor: pointer; margin-top: 20px; transition: 0.3s; }
         .btn-submit:hover { background: #000; }
 
+        /* 네이버 블로그 버튼 스타일 추가 */
+        .btn-naver-blog {
+            display: inline-block;
+            margin-bottom: 20px;
+            background: #03C75A; /* 네이버 공식 그린 컬러 */
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 30px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            border-radius: 5px; /* 약간의 라운드 처리로 모던함 추가 */
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .btn-naver-blog:hover {
+            background: #02b351;
+            transform: translateY(-2px);
+        }
+
         /* 모바일 최적화 */
         @media (max-width: 768px) {
             section { background-attachment: scroll; padding: 60px 15px; }
@@ -199,8 +218,14 @@
         </div>
     </section>
 
-    <footer style="background:#000; padding:40px; text-align:center; font-size:0.9rem; border-top:1px solid #333;">
-        <p>© 한작가의 평생월급연구소 All Rights Reserved.</p>
+    <!-- 수정된 Footer -->
+    <footer style="background:#000; padding:50px 20px; text-align:center; font-size:0.9rem; border-top:1px solid #333;">
+        <!-- 네이버 블로그 바로가기 버튼 추가 -->
+        <a href="https://blog.naver.com/mymoneynzip" target="_blank" class="btn-naver-blog">
+            한작가의 블로그 살펴보기
+        </a>
+        <br>
+        <p style="color:#888;">© 한작가의 평생월급연구소 All Rights Reserved.</p>
     </footer>
 
     <script>
@@ -215,5 +240,3 @@
     </script>
 </body>
 </html>
-
-
