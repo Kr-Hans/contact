@@ -77,7 +77,7 @@
         .btn-naver-blog {
             display: inline-block;
             margin-bottom: 20px;
-            background: #03C75A; /* 네이버 공식 컬러 */
+            background: #03C75A; /* 네이버 공식 그린 컬러 */
             color: #fff;
             text-decoration: none;
             padding: 15px 30px;
@@ -217,16 +217,43 @@
             </form>
             <!-- 폼 끝 -->
 
-            <!-- ▼▼▼ 폼 하단 안심 멘트 (수정된 부분) ▼▼▼ -->
+            <!-- ▼▼▼ 폼 하단 안심 멘트 ▼▼▼ -->
             <div style="margin-top: 40px; text-align: center; line-height: 1.6; word-break: keep-all;">
                 <!-- 1. 흰색 글씨: 팩트 체크 -->
                 <p style="font-size: 1.05rem; color: #fff; margin-bottom: 12px; opacity: 0.9; font-weight: 300;">
-                    유명인 이름만 걸어놓고 실제 상담은 보험 영업조직이 하는 곳과 다릅니다.<br>
-                    한작가는 이들에게 돈을 받고 상담을 넘기지 않습니다.
+                    유명인 이름만 걸어놓고 실제 상담은 ㅂㅎ 영업조직이 하는 곳과 다릅니다. 한작가는 돈을 받고 상담을 넘기지 않습니다.
                 </p>
                 
                 <!-- 2. 노란색 글씨: 핵심 약속 -->
                 <p style="font-size: 1.35rem; color: #f1c40f; font-weight: 700;">
                     한작가는 직접 사연을 읽고 직접 답변합니다
                 </p>
-            </
+            </div>
+            <!-- ▲▲▲ 여기까지 ▲▲▲ -->
+
+        </div>
+    </section>
+
+    <!-- ▼▼▼ 수정된 Footer (블로그 버튼 포함) ▼▼▼ -->
+    <footer style="background:#000; padding:50px 20px; text-align:center; font-size:0.9rem; border-top:1px solid #333;">
+        <!-- 네이버 블로그 바로가기 버튼 추가됨 -->
+        <a href="https://blog.naver.com/mymoneynzip" target="_blank" class="btn-naver-blog">
+            한작가의 블로그 살펴보기
+        </a>
+        <br>
+        <p style="color:#888;">© 한작가의 평생월급연구소 All Rights Reserved.</p>
+    </footer>
+    <!-- ▲▲▲ Footer 끝 ▲▲▲ -->
+
+    <script>
+        function togglePrivacy() {
+            var box = document.getElementById("privacyBox");
+            if (box.style.display === "none" || box.style.display === "") {
+                box.style.display = "block";
+            } else {
+                box.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
